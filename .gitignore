@@ -18,3 +18,5 @@ DerivedData
 .idea/
 *.hmap
 *.xccheckout
+JSQMessages.framework
+JSQMessages.framework.zip
