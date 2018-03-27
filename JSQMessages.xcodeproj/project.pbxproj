@@ -24,8 +24,8 @@
 /* Begin PBXBuildFile section */
 		1F0EFE0F1AC23D7E003FF3DB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0EFE0E1AC23D7E003FF3DB /* MobileCoreServices.framework */; };
 		3E965287206ACFC800756E3D /* JSQMessagesFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E965285206ACFC800756E3D /* JSQMessagesFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E96528A206ACFC800756E3D /* JSQMessagesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E965283206ACFC800756E3D /* JSQMessagesFramework.framework */; };
-		3E96528C206ACFC800756E3D /* JSQMessagesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E965283206ACFC800756E3D /* JSQMessagesFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E96528A206ACFC800756E3D /* JSQMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E965283206ACFC800756E3D /* JSQMessages.framework */; };
+		3E96528C206ACFC800756E3D /* JSQMessages.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E965283206ACFC800756E3D /* JSQMessages.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E965290206ACFE200756E3D /* NSBundle+JSQMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = 8873B60A1AB7B244006DF9AC /* NSBundle+JSQMessages.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E965291206ACFE200756E3D /* NSString+JSQMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A25F5719D8E01A00924534 /* NSString+JSQMessages.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E965292206ACFE200756E3D /* UIColor+JSQMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A25F5919D8E01A00924534 /* UIColor+JSQMessages.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -250,7 +250,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3E96528C206ACFC800756E3D /* JSQMessagesFramework.framework in Embed Frameworks */,
+				3E96528C206ACFC800756E3D /* JSQMessages.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +259,7 @@
 
 /* Begin PBXFileReference section */
 		1F0EFE0E1AC23D7E003FF3DB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		3E965283206ACFC800756E3D /* JSQMessagesFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQMessagesFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E965283206ACFC800756E3D /* JSQMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E965285206ACFC800756E3D /* JSQMessagesFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQMessagesFramework.h; sourceTree = "<group>"; };
 		3E965286206ACFC800756E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B7F5A51CA3FF4E009A44F5 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
@@ -297,7 +297,7 @@
 		8885734919DE540400E89D20 /* DemoSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSettingsViewController.m; sourceTree = "<group>"; };
 		8885734B19DE55D000E89D20 /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
 		8885734C19DE55D000E89D20 /* NSUserDefaults+DemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+DemoSettings.m"; sourceTree = "<group>"; };
-		88A25F0219D8DEC400924534 /* JSQMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSQMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A25F0219D8DEC400924534 /* JSQMessagesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSQMessagesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A25F1B19D8DEC500924534 /* JSQMessagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQMessagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A25F2019D8DEC500924534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A25F2C19D8DF2500924534 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -434,7 +434,7 @@
 				88445B3719E0AE5C0014F889 /* QuartzCore.framework in Frameworks */,
 				88445B3519E0AE4A0014F889 /* CoreGraphics.framework in Frameworks */,
 				88445B3319E0AE450014F889 /* Foundation.framework in Frameworks */,
-				3E96528A206ACFC800756E3D /* JSQMessagesFramework.framework in Frameworks */,
+				3E96528A206ACFC800756E3D /* JSQMessages.framework in Frameworks */,
 				88445B3119E0AE3F0014F889 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,9 +496,9 @@
 		88A25F0319D8DEC400924534 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88A25F0219D8DEC400924534 /* JSQMessages.app */,
+				88A25F0219D8DEC400924534 /* JSQMessagesApp.app */,
 				88A25F1B19D8DEC500924534 /* JSQMessagesTests.xctest */,
-				3E965283206ACFC800756E3D /* JSQMessagesFramework.framework */,
+				3E965283206ACFC800756E3D /* JSQMessages.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -836,9 +836,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3E965282206ACFC800756E3D /* JSQMessagesFramework */ = {
+		3E965282206ACFC800756E3D /* JSQMessages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E96528F206ACFC800756E3D /* Build configuration list for PBXNativeTarget "JSQMessagesFramework" */;
+			buildConfigurationList = 3E96528F206ACFC800756E3D /* Build configuration list for PBXNativeTarget "JSQMessages" */;
 			buildPhases = (
 				3E96527E206ACFC800756E3D /* Sources */,
 				3E96527F206ACFC800756E3D /* Frameworks */,
@@ -849,14 +849,14 @@
 			);
 			dependencies = (
 			);
-			name = JSQMessagesFramework;
+			name = JSQMessages;
 			productName = JSQMessagesFramework;
-			productReference = 3E965283206ACFC800756E3D /* JSQMessagesFramework.framework */;
+			productReference = 3E965283206ACFC800756E3D /* JSQMessages.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		88A25F0119D8DEC400924534 /* JSQMessages */ = {
+		88A25F0119D8DEC400924534 /* JSQMessagesApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88A25F2519D8DEC500924534 /* Build configuration list for PBXNativeTarget "JSQMessages" */;
+			buildConfigurationList = 88A25F2519D8DEC500924534 /* Build configuration list for PBXNativeTarget "JSQMessagesApp" */;
 			buildPhases = (
 				88A25EFE19D8DEC400924534 /* Sources */,
 				88A25EFF19D8DEC400924534 /* Frameworks */,
@@ -868,9 +868,9 @@
 			dependencies = (
 				3E965289206ACFC800756E3D /* PBXTargetDependency */,
 			);
-			name = JSQMessages;
+			name = JSQMessagesApp;
 			productName = JSQMessages;
-			productReference = 88A25F0219D8DEC400924534 /* JSQMessages.app */;
+			productReference = 88A25F0219D8DEC400924534 /* JSQMessagesApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		88A25F1A19D8DEC400924534 /* JSQMessagesTests */ = {
@@ -943,9 +943,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88A25F0119D8DEC400924534 /* JSQMessages */,
+				88A25F0119D8DEC400924534 /* JSQMessagesApp */,
 				88A25F1A19D8DEC400924534 /* JSQMessagesTests */,
-				3E965282206ACFC800756E3D /* JSQMessagesFramework */,
+				3E965282206ACFC800756E3D /* JSQMessages */,
 				3E9652EB206AD14500756E3D /* Aggregate */,
 			);
 		};
@@ -1007,7 +1007,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\nARRAY_TARGETS=(\"JSQMessagesFramework\")\nARRAY_TARGETS_NAME=(\"JSQMessagesFramework\")\n\ni=0\n#for i in {0..1}\n#do\n\nTHE_TARGET_NAME=\"${ARRAY_TARGETS_NAME[${i}]}\"\nTHE_TARGET=\"${ARRAY_TARGETS[${i}]}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild ENABLE_BITCODE=NO IPHONEOS_DEPLOYMENT_TARGET=8.2 -target \"${THE_TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild ENABLE_BITCODE=NO IPHONEOS_DEPLOYMENT_TARGET=8.2 -target \"${THE_TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -arch x86_64 -arch i386 -arch armv7 -arch armv7s -arch arm64 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${THE_TARGET}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${THE_TARGET}.framework/Modules/${THE_TARGET}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${THE_TARGET}.framework/Modules/${THE_TARGET}.swiftmodule\"\nfi\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${THE_TARGET}.framework/${THE_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${THE_TARGET}.framework/${THE_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${THE_TARGET}.framework/${THE_TARGET}\"\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${THE_TARGET}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\n#done\n\nopen \"${PROJECT_DIR}\"";
+			shellScript = "#!/bin/sh\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\nARRAY_TARGETS=(\"JSQMessages\")\nARRAY_TARGETS_NAME=(\"JSQMessages\")\n\ni=0\n#for i in {0..1}\n#do\n\nTHE_TARGET_NAME=\"${ARRAY_TARGETS_NAME[${i}]}\"\nTHE_TARGET=\"${ARRAY_TARGETS[${i}]}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild ENABLE_BITCODE=NO IPHONEOS_DEPLOYMENT_TARGET=8.2 -target \"${THE_TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild ENABLE_BITCODE=NO IPHONEOS_DEPLOYMENT_TARGET=8.2 -target \"${THE_TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -arch x86_64 -arch i386 -arch armv7 -arch armv7s -arch arm64 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${THE_TARGET}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${THE_TARGET}.framework/Modules/${THE_TARGET}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${THE_TARGET}.framework/Modules/${THE_TARGET}.swiftmodule\"\nfi\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${THE_TARGET}.framework/${THE_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${THE_TARGET}.framework/${THE_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${THE_TARGET}.framework/${THE_TARGET}\"\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${THE_TARGET}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\n#done\n\nopen \"${PROJECT_DIR}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1150,17 +1150,17 @@
 /* Begin PBXTargetDependency section */
 		3E965289206ACFC800756E3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E965282206ACFC800756E3D /* JSQMessagesFramework */;
+			target = 3E965282206ACFC800756E3D /* JSQMessages */;
 			targetProxy = 3E965288206ACFC800756E3D /* PBXContainerItemProxy */;
 		};
 		3E9652F0206AD14B00756E3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E965282206ACFC800756E3D /* JSQMessagesFramework */;
+			target = 3E965282206ACFC800756E3D /* JSQMessages */;
 			targetProxy = 3E9652EF206AD14B00756E3D /* PBXContainerItemProxy */;
 		};
 		88A25F1D19D8DEC500924534 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 88A25F0119D8DEC400924534 /* JSQMessages */;
+			target = 88A25F0119D8DEC400924534 /* JSQMessagesApp */;
 			targetProxy = 88A25F1C19D8DEC500924534 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1445,7 +1445,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E96528F206ACFC800756E3D /* Build configuration list for PBXNativeTarget "JSQMessagesFramework" */ = {
+		3E96528F206ACFC800756E3D /* Build configuration list for PBXNativeTarget "JSQMessages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E96528D206ACFC800756E3D /* Debug */,
@@ -1472,7 +1472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88A25F2519D8DEC500924534 /* Build configuration list for PBXNativeTarget "JSQMessages" */ = {
+		88A25F2519D8DEC500924534 /* Build configuration list for PBXNativeTarget "JSQMessagesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88A25F2619D8DEC500924534 /* Debug */,
