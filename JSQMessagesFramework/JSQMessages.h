@@ -64,9 +64,12 @@ FOUNDATION_EXPORT const unsigned char JSQMessagesFrameworkVersionString[];
 #import "JSQMessagesToolbarButtonFactory.h"
 
 //  Categories
-//#import "JSQSystemSoundPlayer+JSQMessages.h"
+#import "JSQSystemSoundPlayer+JSQMessages.h"
 #import "NSString+JSQMessages.h"
 #import "UIColor+JSQMessages.h"
 #import "UIImage+JSQMessages.h"
 #import "UIView+JSQMessages.h"
+
+#import "JSQMessagesKeyboardController.h"
+#import "UIDevice+JSQMessages.h"
 
