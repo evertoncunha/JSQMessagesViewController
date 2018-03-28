@@ -20,3 +20,4 @@ DerivedData
 *.xccheckout
 JSQMessages.framework.zip
 JSQMessages.framework
+Carthage
